@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    transition: background 1s ease-in-out;
+    background: linear-gradient(#4facfe, #00f2fe);
+    text-align: center;
+}
+
+
+.container {
+    margin: 30px auto;
+    width: 350px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+.search-box button {
+    padding: 12px;
+    background: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.weather-card {
+    margin-top: 20px;
+    background: #ecf7ff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.weather-card.hidden {
+    display: none;
+}
+
+.weather-icon {
+    width: 80px;
+}
+
+
+.forecast-title {
+    margin-top: 25px;
+}
+
+.forecast-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: scroll;
+    padding: 10px 0;
+}
+
+.forecast-day {
+    min-width: 70px;
+    background: #f1faff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+.error {
+    color: red;
+    margin-top: 15px;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 6px solid white;
+    border-top: 6px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.loader.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
